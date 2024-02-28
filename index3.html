@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Clients</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+        body{
+            background-image: url('https://res.cloudinary.com/dns2f00mf/image/upload/v1709118916/DBP_Cummins_ChrisCooper_02-modified_tvbsyl.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .lnavbar{
+            padding-left: 20px;
+            color: rgb(0, 0, 0);
+            padding-top: 30px;
+        }
+        .rnavbar{
+            padding-right: 30px;
+            padding-top: 30px;
+            color: rgb(0, 0, 0);
+        }
+        .a{
+            padding: 10px;
+            color: rgb(0, 0, 0);
+        }
+        .intro{
+            font-family: 'Ubuntu', sans-serif;
+            padding-left: 20px;
+            padding-top: 210px;
+            color: rgb(0, 0, 0);
+        }
+        .linkk{
+            padding-left: 20px;
+        }
+        .skills{
+            font-family: 'Ubuntu', sans-serif;
+            color: black;
+        }
+        .al{
+            height: 130px;
+            padding: 10px;
+        }
+        @media only screen and (max-width:414px) {
+            
+        }
+        .maincontainer
+{
+    width: 302px;
+    height: 299px;
+    margin: 10px;
+    float: left; /* stack each div horizontally */
+}
+
+img
+{
+   border-radius: 10px;
+}
+
+.back h2
+{
+    position: absolute;
+}
+
+.back p
+{
+    position: absolute;
+    top: 50px;
+    font-size: 15px;
+}
+
+.front h2
+{
+    position: absolute;
+    padding: 10px;
+    top: 200px;
+    color: #000;
+}
+
+/* style the maincontainer class with all child div's of class .front */
+.maincontainer > .front
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    
+    width: 302px;
+    height: 290px;
+    
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+
+/* style the maincontainer class with all child div's of class .back */
+.maincontainer > .back
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #262626;
+    color: #fff;
+    width: 302px;
+    height: 290px;
+    border-radius: 10px;
+    padding: 5px;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+
+.maincontainer:hover > .front
+{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.maincontainer:hover > .back
+{
+    transform: perspective(600px) rotateY(0deg);
+}
+.back{
+    font-family: 'Ubuntu', sans-serif;
+}
+.content{
+    padding-left: 120px;
+}
+
+</style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="navbar">
+        <div class="lnavbar">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Revature-768x768.webp" style="height: 120px;">
+        </div>
+        <div class="rnavbar">
+            <a class="a" href="index.html"><button type="button" class="btn btn-outline-dark">Home</button></a>
+            <a class="a" href="index1.html"><button type="button" class="btn btn-outline-dark">About</button></a>
+            <a class="a" href="index3.html"><button type="button" class="btn btn-outline-dark">Our Clients</button></a>
+            <a class="a" href="index5.html"><button type="button" class="btn btn-outline-dark">Contact</button></a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="maincontainer">
+            <div class="back">
+                <h2>Salesforce</h2>
+                <p> Salesforce is cloud-based CRM software (What is CRM?). It makes it easier for companies to find more prospects, close more deals, and connect with customers in a whole new way, so they can provide them with amazing service at scale.</p>
+            </div>
+            <div class="front">
+                <div class="image">
+                <img style="height: 150px; padding-left: 80px; padding-top: 60px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/2560px-Salesforce.com_logo.svg.png">
+                </div>
+            </div>
+        </div>
+        <div class="maincontainer">
+            <div class="back">
+                <h2>ServiceNow</h2>
+                <p> 
+                    ServiceNow is used to set up systems that define, manage, automate and structure IT services for companies. At a very simple level, think of it as a tool that allows you to raise and track tickets as well as process and catalogue regular IT service requests.</p>
+            </div>
+            <div class="front">
+                <div class="image">
+                <img style="height: 150px; padding-left: 80px; padding-top: 60px;" src="https://1000logos.net/wp-content/uploads/2021/09/ServiceNow-Logo.png">
+                </div>
+            </div>
+        </div>
+        <div class="maincontainer">
+            <div class="back">
+                <h2>Pega</h2>
+                <p>Pega is a Java-based business process management tool that is used to build enterprise applications. Among all the BPM tools in the market, Pega is the leading and No-1 tool according to market standards far beyond its competitors. Pega enables in creating and managing web-based applications with less effort.</p>
+            </div>
+            <div class="front">
+                <div class="image">
+                <img  style="height: 150px; padding-left: 80px; padding-top: 60px;" src="https://download.logo.wine/logo/Pegasystems/Pegasystems-Logo.wine.png">
+                </div>
+            </div>
+        </div>   
+        <div class="maincontainer">
+            <div class="back">
+                <h2>UI Path</h2>
+                <p>UiPath is a robotic process automation tool for large-scale end-to-end automation. For an accelerated business change, it provides solutions for businesses to automate routine office activities. It uses a variety of methods to transform tedious tasks into automated processes.</p>
+            </div>
+            <div class="front">
+                <div class="image">
+                <img  style="height: 150px; padding-left: 80px; padding-top: 60px;" src="https://uipath.com/cdn-cgi/image/format=auto/https:////images.ctfassets.net/5965pury2lcm/6MFhCGfXVbY8jUOQaPJiTh/5eb6cb527c6eba6e80ec27a7ab11fef9/UiPath_Color.png">
+                </div>
+            </div>
+        </div>    
+        <div class="maincontainer">
+            <div class="back">
+                <h2>Genpact</h2>
+                <p>Genpact is a professional services firm legally domiciled in Bermuda with its headquarters in New York City, New York. The company currently employs more than 100,000 people and provides services to clients in over 30 countries worldwide. Genpact is listed on the NYSE and generated revenues of US$3.71 billion in 2021.</p>
+            </div>
+            <div class="front">
+                <div class="image">
+                <img  style="height: 150px; padding-left: 80px; padding-top: 60px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Genpact_logo.svg/1280px-Genpact_logo.svg.png">
+                </div>
+            </div>
+        </div>    
+        <div class="maincontainer">
+            <div class="back">
+                <h2>Infosys </h2>
+                <p>Infosys Limited is an Indian multinational information technology company that provides business consulting, information technology and outsourcing services. The company was founded in Pune and is headquartered in Bangalore.</p>
+            </div>
+            <div class="front">
+                <div class="image">
+                <img  style="height: 150px; padding-left: 80px; padding-top: 60px;" src="https://w7.pngwing.com/pngs/880/528/png-transparent-infosys-logo-and-slogan.png">
+                </div>
+            </div>
+        </div>         
+    </div>
+    
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
